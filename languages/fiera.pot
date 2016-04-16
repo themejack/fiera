@@ -1,0 +1,326 @@
+# Copyright (C) 2016 Slicejack
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Fiera 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/themejack/fiera/issues\n"
+"POT-Creation-Date: 2016-04-16 14:19:06+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: 404.php:18
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:22
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr ""
+
+#: comments.php:29
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:38 comments.php:59
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:41 comments.php:62
+msgid "Older Comments"
+msgstr ""
+
+#: comments.php:42 comments.php:63
+msgid "Newer Comments"
+msgstr ""
+
+#: comments.php:75
+msgid "Comments are closed."
+msgstr ""
+
+#: footer.php:18
+msgid "Theme: %1$s by %2$s."
+msgstr ""
+
+#: functions.php:52
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:111
+msgid "Sidebar"
+msgstr ""
+
+#: inc/admin-page.php:21
+msgid ""
+"<strong>Fiera:</strong> location map is not working. You need to set your "
+"Mapbox Public Token <a href=\"%s\">here</a>."
+msgstr ""
+
+#: inc/admin-page.php:32
+msgid "Insert your Mapbox Public Token here"
+msgstr ""
+
+#: inc/admin-page.php:33
+msgid ""
+"You need a public API token to access the Mapbox static API. You can get it "
+"<a href=\"%s\" target=\"_blank\">here</a>. <a href=\"%s\" target=\"_blank"
+"\">Help?</a>"
+msgstr ""
+
+#: inc/admin-page.php:62
+msgid "homepage"
+msgstr ""
+
+#: inc/admin-page.php:110
+msgid "Reload cache"
+msgstr ""
+
+#: inc/admin-page.php:117
+msgid "SliceJack Blog"
+msgstr ""
+
+#: inc/admin-page.php:142
+msgid "Read more posts"
+msgstr ""
+
+#: inc/admin-page.php:168
+msgid "<strong>RSS Error</strong>: %s"
+msgstr ""
+
+#: inc/admin-page.php:185
+msgid ""
+"An error has occurred, which probably means the feed is down. Try again "
+"later."
+msgstr ""
+
+#: inc/admin-page.php:201
+msgid "Untitled"
+msgstr ""
+
+#: inc/admin-page.php:239
+msgid "Read more"
+msgstr ""
+
+#: inc/admin-page.php:269
+msgid "You do not have sufficient permissions to access this page."
+msgstr ""
+
+#: inc/admin-page.php:291
+msgid "Click here"
+msgstr ""
+
+#: inc/admin-page.php:304
+msgid "Welcome"
+msgstr ""
+
+#: inc/admin-page.php:305
+msgid "Customize"
+msgstr ""
+
+#: inc/admin-page.php:306
+msgid "Child theme"
+msgstr ""
+
+#: inc/admin-page.php:307
+msgid "Contribute to Fiera"
+msgstr ""
+
+#: inc/admin-page.php:308
+msgid "Translations"
+msgstr ""
+
+#: inc/admin-page.php:309
+msgid "Slicejack News"
+msgstr ""
+
+#. #-#-#-#-#  fiera.pot (Fiera 1.0.0)  #-#-#-#-#
+#. Theme Name of the theme
+#: inc/admin-page.php:313
+msgid "Fiera"
+msgstr ""
+
+#: inc/admin-page.php:316
+msgid "Dashboard"
+msgstr ""
+
+#: inc/admin-page.php:317
+msgid "Options"
+msgstr ""
+
+#: inc/customizer.php:34
+msgid "Header text color"
+msgstr ""
+
+#: inc/customizer.php:40
+msgid "Layouts"
+msgstr ""
+
+#: inc/customizer.php:54
+msgid "Global"
+msgstr ""
+
+#: inc/customizer.php:58 inc/customizer.php:84 inc/customizer.php:110
+#: inc/customizer.php:136 inc/customizer.php:162 inc/customizer.php:188
+#: inc/customizer.php:214 inc/customizer.php:240
+msgid "None"
+msgstr ""
+
+#: inc/customizer.php:61 inc/customizer.php:87 inc/customizer.php:113
+#: inc/customizer.php:139 inc/customizer.php:165 inc/customizer.php:191
+#: inc/customizer.php:217 inc/customizer.php:243
+msgid "Left"
+msgstr ""
+
+#: inc/customizer.php:64 inc/customizer.php:90 inc/customizer.php:116
+#: inc/customizer.php:142 inc/customizer.php:168 inc/customizer.php:194
+#: inc/customizer.php:220 inc/customizer.php:246
+msgid "Right"
+msgstr ""
+
+#: inc/customizer.php:77
+msgid "Blog"
+msgstr ""
+
+#: inc/customizer.php:81 inc/customizer.php:107 inc/customizer.php:133
+#: inc/customizer.php:159 inc/customizer.php:185 inc/customizer.php:211
+#: inc/customizer.php:237
+msgid "Disabled"
+msgstr ""
+
+#: inc/customizer.php:103
+msgid "Single"
+msgstr ""
+
+#: inc/customizer.php:129
+msgid "Archive"
+msgstr ""
+
+#: inc/customizer.php:155
+msgid "Category archive"
+msgstr ""
+
+#: inc/customizer.php:181
+msgid "Search"
+msgstr ""
+
+#: inc/customizer.php:207
+msgid "404"
+msgstr ""
+
+#: inc/customizer.php:233
+msgid "Default Page"
+msgstr ""
+
+#: inc/customizer.php:266
+msgid "Content"
+msgstr ""
+
+#: inc/metaboxes.php:35
+msgid ""
+"Location map is not working. You need to set your Mapbox Public Token <a "
+"href=\"%s\">here</a>."
+msgstr ""
+
+#: inc/template-tags.php:28
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr ""
+
+#: inc/template-tags.php:33
+msgctxt "post author"
+msgid "by %s"
+msgstr ""
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:42 inc/template-tags.php:48
+msgid ", "
+msgstr ""
+
+#: inc/template-tags.php:44
+msgid "Posted in %1$s"
+msgstr ""
+
+#: inc/template-tags.php:50
+msgid "Tagged %1$s"
+msgstr ""
+
+#: inc/template-tags.php:56
+msgid "Leave a comment"
+msgstr ""
+
+#: inc/template-tags.php:56
+msgid "1 Comment"
+msgstr ""
+
+#: inc/template-tags.php:56
+msgid "% Comments"
+msgstr ""
+
+#: inc/template-tags.php:60 template-parts/content-page.php:26
+msgid "Edit"
+msgstr ""
+
+#: search.php:19
+msgid "Search Results for: %s"
+msgstr ""
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#: template-parts/content-none.php:20
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:24
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: template-parts/content-none.php:29
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: template-parts/content-page.php:19 template-parts/content-single.php:23
+#: template-parts/content.php:32
+msgid "Pages:"
+msgstr ""
+
+#. translators: %s: Name of current post.
+#: template-parts/content.php:25
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: template-parts/section-tickets.php:37
+msgid "Buy now"
+msgstr ""
+
+#. Theme URI of the theme
+msgid ""
+"http://slicejack.com/fiera-free-clean-and-responsive-wordpress-theme-for-"
+"events"
+msgstr ""
+
+#. Description of the theme
+msgid ""
+"Fiera is clean and beautifully designed responsive WordPress theme for "
+"events and conferences. It has everything you need to launch an event "
+"website easier than ever. And it’s free!"
+msgstr ""
+
+#. Author of the theme
+msgid "Slicejack"
+msgstr ""
+
+#. Author URI of the theme
+msgid "http://slicejack.com"
+msgstr ""

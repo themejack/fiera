@@ -1,0 +1,91 @@
+{
+    "watch": [
+        {
+            "files"    : "source/less/**/*.less",
+            "run"      : [ "less" ],
+            "target"   : "default"
+        },
+        {
+            "files"    : "source/admin/less/**/*.less",
+            "run"      : [ "less" ],
+            "target"   : "admin"
+        },
+        {
+            "files"   : "source/js/vendor/**/*.js",
+            "run"     : [ "js" ],
+            "target"  : "default"
+        },
+        {
+            "files"   : "source/js/scripts.js",
+            "run"     : [ "js" ],
+            "target"  : "default"
+        },
+        {
+            "files"   : "source/admin/js/**/*.js",
+            "run"     : [ "js" ],
+            "target"  : "admin"
+        },
+        {
+            "files"   : "source/js/customizer.js",
+            "run"     : [ "js" ],
+            "target"  : "customizer"
+        },
+        {
+            "files"   : "source/js/skip-link-focus-fix.js",
+            "run"     : [ "js" ],
+            "target"  : "skip-link-focus-fix"
+        }
+    ],
+    "less": {
+        "default": {
+            "files": {
+                "source/less/style.less": [
+                    "css/style.css"
+                ]
+            }
+        },
+        "admin": {
+            "files": {
+                "source/admin/less/admin-page.less": [
+                    "admin/css/fiera-admin-page.css"
+                ],
+                "source/admin/less/customize-control-layout.less": [
+                    "admin/css/fiera-customize-control-layout.css"
+                ],
+                "source/admin/less/editor.less": [
+                    "admin/css/fiera-editor.css"
+                ]
+            }
+        }
+    },
+    "js": {
+        "default": {
+            "files": {
+                "source/js/scripts.js": [
+                    "js/scripts.js"
+                ]
+            }
+        },
+        "admin": {
+            "files": {
+                "source/admin/js/customize-control-layout.js": [
+                    "admin/js/fiera-customize-control-layout.js"
+                ]
+            }
+        },
+        "customizer": {
+            "files": {
+                "source/js/customizer.js": [
+                    "js/customizer.js"
+                ]
+            }
+        },
+        "skip-link-focus-fix": {
+            "files": {
+                "source/js/skip-link-focus-fix.js": [
+                    "js/skip-link-focus-fix.js"
+                ]
+            }
+        }
+    }
+}

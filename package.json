@@ -1,0 +1,51 @@
+{
+  "name": "Fiera",
+  "version": "1.0.0",
+  "description": "Fiera is clean and beautifully designed responsive WordPress theme for events and conferences. It has everything you need to launch an event website easier than ever. And it’s free!",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "autoprefixer": "^6.0.3",
+    "browserslist": "0.x.x",
+    "css-mqpacker": "^4.0.0",
+    "gulp": "3.9.x",
+    "gulp-autoprefixer": "2.x.x",
+    "gulp-include": "1.x.x",
+    "gulp-less": "3.x.x",
+    "gulp-minify-css": "1.x.x",
+    "gulp-plumber": "1.x.x",
+    "gulp-postcss": "^6.0.1",
+    "gulp-rename": "1.x.x",
+    "gulp-uglify": "1.x.x",
+    "gulp-util": "3.x.x",
+    "postcss-log-warnings": "^0.3.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:themejack/fiera.git"
+  },
+  "author": "Slicejack",
+  "license": "MIT",
+  "scripts": {
+    "prepare": "npm run prepare:all",
+    "prepare:all": "npm run prepare:dependencies && npm run build:all",
+    "prepare:dependencies": "npm install",
+    "build": "npm run build:all",
+    "build:all": "npm run build:less && npm run build:js",
+    "build:less": "npm run build:less:default && npm run build:admin:less",
+    "build:less:default": "node ./node_modules/gulp/bin/gulp.js less --target=default",
+    "build:js": "npm run build:js:default && npm run build:admin:js && npm run build:js:customizer && npm run build:js:skip-link-focus-fix",
+    "build:js:default": "node ./node_modules/gulp/bin/gulp.js js --target=default",
+    "build:js:customizer": "node ./node_modules/gulp/bin/gulp.js js --target=customizer",
+    "build:js:skip-link-focus-fix": "node ./node_modules/gulp/bin/gulp.js js --target='skip-link-focus-fix'",
+    "build:admin": "npm run build:admin:less && npm run build:admin:js",
+    "build:admin:less": "node ./node_modules/gulp/bin/gulp.js less --target=admin",
+    "build:admin:js": "node ./node_modules/gulp/bin/gulp.js js --target=admin",
+    "gulp": "node ./node_modules/gulp/bin/gulp.js default",
+    "gulp:default": "node ./node_modules/gulp/bin/gulp.js default",
+    "gulp:watch": "node ./node_modules/gulp/bin/gulp.js watch",
+    "watch": "npm run gulp:watch"
+  }
+}
