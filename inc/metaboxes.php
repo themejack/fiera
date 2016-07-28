@@ -7,7 +7,7 @@
 
 define( 'OMNI_BUILDER_URI', get_template_directory_uri() . '/inc/OmniBuilder' );
 
-require 'OmniBuilder/builder.php';
+require 'OmniBuilder/Builder.php';
 
 use OmniBuilder\Custom_Post_Type;
 use OmniBuilder\Core_Post_Type;
