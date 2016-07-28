@@ -72,18 +72,35 @@ add_action( 'init', 'fiera_set_global_data' );
  * @return array       Escaped data.
  */
 function fiera_esc_buttons_data( $data = array() ) {
+	if ( empty( $data ) || ! is_array( $data ) ) {
+		return array();
+	}
+
 	$allowed_colors = array( 'red', 'blue', 'green', 'white', 'black', 'transparent' );
+
+	$escaped_data = array();
+
 	foreach ( $data as $key => $item ) {
 		if ( empty( $item ) || ! isset( $item['link'] ) ) {
-			unset( $data[ $key ] );
+			continue;
 		}
 
+		$escaped_data[ $key ] = array();
+
+		// Title.
 		if ( isset( $item['title'] ) ) {
-			$data[ $key ]['title'] = esc_html( $item['title'] );
+			$escaped_data[ $key ]['title'] = esc_html( $item['title'] );
 		}
 
-		$data[ $key ]['link'] = esc_url( $item['link'] );
-		$data[ $key ]['color'] = isset( $item['color'] ) && in_array( $item['color'], $allowed_colors ) ? $item['color'] : $allowed_colors[0];
+		// Link.
+		$escaped_data[ $key ]['link'] = esc_url( $item['link'] );
+
+		// Color.
+		if ( isset( $item['color'] ) && in_array( $item['color'], $allowed_colors ) ) {
+			$escaped_data[ $key ]['color'] = $item['color'];
+		} else {
+			$escaped_data[ $key ]['color'] = $allowed_colors[0];
+		}
 	}
 
 	return $data;
@@ -96,7 +113,7 @@ function fiera_esc_buttons_data( $data = array() ) {
  * @return array        Escaped data.
  */
 function fiera_esc_sections( $data = array() ) {
-	if ( ! is_array( $data ) ) {
+	if ( empty( $data ) || ! is_array( $data ) ) {
 		return array(
 			'blocks' => array(),
 			'nav_items' => array(),
@@ -150,13 +167,14 @@ function fiera_esc_sections( $data = array() ) {
 			if ( isset( $section['tabs'] ) && ! empty( $section['tabs'] ) ) {
 				$is_first = true;
 				foreach ( $section['tabs'] as $tab_id => $tab ) {
-					if ( ! empty( trim( $tab['title'] ) ) ) {
+					$tab_title = trim( $tab['title'] );
+					if ( ! empty( $tab_title ) ) {
 						$data[ $key ]['tabs'][ $tab_id ]['is_active'] = $is_first;
 						if ( $is_first ) {
 							$is_first = false;
 						}
 
-						$data[ $key ]['tabs'][ $tab_id ]['title'] = trim( $tab['title'] );
+						$data[ $key ]['tabs'][ $tab_id ]['title'] = $tab_title;
 					}
 				}
 			} else {
@@ -241,7 +259,7 @@ function fiera_esc_sections( $data = array() ) {
  * @return boolean
  */
 function setup_block_data( $_block = array() ) {
-	if ( is_array( $_block ) && ! empty( $_block ) && isset( $_block['type'] ) ) {
+	if ( ! empty( $_block ) && is_array( $_block ) && isset( $_block['type'] ) ) {
 		global $block;
 		$block = $_block;
 

@@ -9,7 +9,8 @@ global $fiera_data;
 $block = array();
 
 get_header(); ?>
-
+<?php if ( ! empty( $fiera_data ) ) : ?>
+	<?php if ( ! empty( $fiera_data['hero'] ) ) : ?>
 		<div class="hero-subheader" style="background-image: url(<?php echo $fiera_data['hero']['background'][0]; // WPCS: XSS OK. ?>)">
 			<div class="container">
 				<div class="row">
@@ -35,13 +36,16 @@ get_header(); ?>
 
 			<div class="hero-subheader__overlay" style="background-color: rgba(0, 0, 0, 0.4);"></div><!-- /.overlay -->
 		</div><!-- /.hero subheader -->
+	<?php endif; ?>
 
-		<?php if ( isset( $fiera_data['sections'] ) && isset( $fiera_data['sections']['blocks'] ) && ! empty( $fiera_data['sections']['blocks'] ) ) :
+		<?php if ( ! empty( $fiera_data['sections'] ) && isset( $fiera_data['sections']['blocks'] ) && ! empty( $fiera_data['sections']['blocks'] ) ) :
 			foreach ( $fiera_data['sections']['blocks'] as $block ) :
 				if ( setup_block_data( $block ) ) :
 					get_template_part( 'template-parts/section', isset( $block['type'] ) ? str_replace( '_', '-', $block['type'] ) : '' );
 				endif;
 			endforeach;
 		endif; ?>
+
+<?php endif; ?>
 
 <?php get_footer();

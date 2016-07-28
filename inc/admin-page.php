@@ -14,9 +14,9 @@ require_once( ABSPATH . 'wp-admin/includes/dashboard.php' );
 function fiera_admin_page_notices() {
 	settings_errors( 'fiera' );
 
-	$fiera_mapbox_public_token = get_option( 'fiera_mapbox_public_token' );
+	$fiera_mapbox_public_token = trim( get_option( 'fiera_mapbox_public_token' ) );
 
-	if ( empty( trim( $fiera_mapbox_public_token ) ) ) : ?>
+	if ( empty( $fiera_mapbox_public_token ) ) : ?>
 	<div class="notice notice-error is-dismissible">
 		<p><?php echo wp_kses( sprintf( __( '<strong>Fiera:</strong> location map is not working. You need to set your Mapbox Public Token <a href="%s">here</a>.' ), esc_url( admin_url( 'themes.php?page=fiera&tab=options' ) ) ), array( 'a' => array( 'href' => array() ), 'strong' => array() ) ); ?></p>
 	</div>

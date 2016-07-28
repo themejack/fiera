@@ -1,5 +1,10 @@
 ![Fiera](http://slicejack.com/shared/fiera-header.png "Fiera")
 
+# Requirements
+---------------
+- Wordpress >= **4.x** 
+- PHP >= **5.3.x**
+
 # Installation
 ---------------
 Installing this theme is pretty easy. After download you should have a fiera.zip (compressed file with all folders and files of this theme).
